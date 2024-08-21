@@ -9,8 +9,7 @@
 </head>
 
 <body>
-  <!-- To run this file right click the file in the navigation bar and select "Open with live server. Then open the developer tools in the browser and head to the console window."-->
-
+  <!-- To run this file right click the file in the navigation bar and select "Open with live server. Then open the developer tools in the browser and head to the console window."-->  
   <!-- Use this element to render your menu -->
   <ul id="menu"></ul>
 
@@ -34,7 +33,17 @@
       }
     ]
     // Write your code here
-
+    function showVegetarianMenu(menu) {
+      let domElement = document.getElementById('menu');
+      menu.filter((x) => x.isVegetarian)
+        .forEach(item => {
+          let listItem = document.createElement('li');
+          listItem.innerText = item.name;
+          domElement.appendChild(listItem);
+      });
+    }
+    
+    this.showVegetarianMenu(menu);
   </script>
 </body>
 
