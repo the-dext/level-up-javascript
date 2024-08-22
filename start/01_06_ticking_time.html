@@ -18,9 +18,13 @@
     // Write your code here
     function updateTime() {
       const clockElement = document.getElementById('clock');
-      const time = Date.now()
-      clockElement.innerHTML = time
+      const now = new Date();
+      let time = `${now.getDate()}/${now.getMonth()}/${now.getFullYear()} ${now.getHours()}:${now.getMinutes()}:${now.getSeconds()}`;
+      console.log(time);
+      clockElement.innerHTML = time;
+      setTimeout(updateTime, 1000);
     }
+    setTimeout(updateTime, 1000);
   </script>
 </body>
 
