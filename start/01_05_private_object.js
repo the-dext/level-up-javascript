@@ -16,11 +16,18 @@ console.log(u.age);
 
 
 // for an object you can use a symbol. But class is much clearer.
-// Todo. 
+// read symbol value from the object using the array style accessor.
+// ...so is it really private !? 
 const  username = Symbol('username');
 const  password = Symbol('password');
-let u2 = { [username] : username, [password]: "123", age:21, printPassword : ()=> {this[password]}};
-console.log(u2.username);
-console.log(u2.password);
+let u2 = { 
+    [username] : 'chris', 
+    [password]: "123abc", 
+    age:21
+};
+
+console.log('reading symbol direct' + u2.username);
+console.log('reading symbol direct' + u2.password);
+console.log(u2[username]);
+console.log(u2[password]);
 console.log(u2.age);
-console.log(u2.printPassword());
