@@ -16,7 +16,11 @@
 
   <script>
     // Write your code here
-    
+    function updateTime() {
+      const clockElement = document.getElementById('clock');
+      const time = Date.now()
+      clockElement.innerHTML = time
+    }
   </script>
 </body>
 
