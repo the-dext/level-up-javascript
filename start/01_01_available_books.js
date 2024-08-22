@@ -3,7 +3,7 @@ class Book {
     title;
     author;
     isbn;
-    numCopies;    
+    numCopies;    //.
 
     constructor (title, author, isbn, numCopies) {
         this.title = title;
