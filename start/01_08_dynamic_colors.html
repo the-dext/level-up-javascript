@@ -18,7 +18,12 @@
 
   <script>
     // Write your code here
-
+    function changeColor(newColor) {
+      document.body.bgColor = newColor;
+    }
+    document.querySelectorAll('button').forEach((btn) => {
+      btn.addEventListener('click', () => changeColor(btn.id));
+    });
   </script>
 </body>
 
