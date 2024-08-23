@@ -33,13 +33,15 @@ function getStudents(classroom) {
 
 
 
-const classroom = {
+const classroomWithTeachingAssistant = {
     hasTeachingAssistant :true,
     classList : ['chris', 'sarah', 'ebony', 'tom', 'charlie']
 };
-let test1 = getStudents(classroom);
+let test1 = getStudents(classroomWithTeachingAssistant);
 console.log(test1);
 
-classroom.hasTeachingAssistant = false;
-let test2 = getStudents(classroom);
+const classroomWithoutTeachingAssistant = {
+    hasTeachingAssistant :false,
+    classList : ['chris', 'sarah', 'ebony', 'tom', 'charlie']
+};let test2 = getStudents(classroomWithoutTeachingAssistant);
 console.log(test2);
