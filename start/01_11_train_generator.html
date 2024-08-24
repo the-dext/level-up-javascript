@@ -16,6 +16,30 @@
 
   <script>
     // Write your code here
+    function* getNextStop() {
+      const stops = ['Poughkeepsie', 'Newburgh', 'Peekskill', 'Yonkers', 'Bronx', 'Grand Central'];
+      yield stops[0];
+      yield stops[1];
+      yield stops[2];
+      yield stops[3];
+      yield stops[4];
+      yield stops[5];
+    }
+
+    const stopCaller = getNextStop();
+
+    document.querySelector('#next-stop')
+      .addEventListener('click', () => {
+        const item = stopCaller.next();
+
+        if (item.done) {
+          document.querySelector('#next-stop').disabled = true;
+        } else {
+          const stopElement = document.createElement('p');
+          stopElement.innerHTML = item.value;
+          document.body.appendChild(stopElement);
+        }
+      });
 
   </script>
 </body>
