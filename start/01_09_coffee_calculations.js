@@ -13,5 +13,5 @@ function calculateBill(orders, price) {
 }
 
 const coffeePrice = 1.25;
-coffeeOrders = [2, 5, 7, 1, 4];
+let coffeeOrders = [2, 5, 7, 1, 4];
 console.log(calculateBill(coffeeOrders, coffeePrice));
