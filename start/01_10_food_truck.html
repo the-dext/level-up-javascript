@@ -16,7 +16,23 @@
 
   <script>
     // Write your code here
+    function festivalMenu(...vendorMenus) {
+      const flatMenu = vendorMenus.flat();
+      return new Set(flatMenu);
+    }
 
+    const vendorMenu1 = ["pizza", "pasta"];
+    const vendorMenu2 = ["pizza", "calzones"];
+    const vendorMenu3 = ["lobster"];
+    const vendorMenu4 = ["calzones"];
+
+    const festivalFood = festivalMenu(vendorMenu1, vendorMenu2, vendorMenu3, vendorMenu4);
+
+    for (const food of festivalFood) {
+      const li = document.createElement('li');
+      li.textContent = food;
+      document.querySelector('#combined-menu').appendChild(li);
+    };
   </script>
 </body>
 
