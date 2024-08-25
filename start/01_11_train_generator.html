@@ -30,20 +30,18 @@
     }
 
     const stopCaller = getNextStop();
+    const btn = document.querySelector('#next-stop');
+    btn.addEventListener('click', () => {
+      const nextStopResult = stopCaller.next();
+      const stopElement = document.createElement('p');
+      stopElement.innerHTML = nextStopResult.done ? "We made it!" : nextStopResult.value;
+      document.body.appendChild(stopElement);
 
-    document.querySelector('#next-stop')
-      .addEventListener('click', () => {
-        const item = stopCaller.next();
-
-        const stopElement = document.createElement('p');
-        stopElement.innerHTML = item.done ? "We made it!" : item.value;
-        document.body.appendChild(stopElement);
-
-        if (item.done) {
-          document.querySelector('#next-stop').disabled = true;
-          console.log("We made it!");
-        }
-      });
+      if (nextStopResult.done) {
+        btn.disabled = true;
+        console.log("We made it!");
+      }
+    });
 
   </script>
 </body>
