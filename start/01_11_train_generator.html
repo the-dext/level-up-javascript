@@ -18,12 +18,15 @@
     // Write your code here
     function* getNextStop() {
       const stops = ['Poughkeepsie', 'Newburgh', 'Peekskill', 'Yonkers', 'Bronx', 'Grand Central'];
-      yield stops[0];
-      yield stops[1];
-      yield stops[2];
-      yield stops[3];
-      yield stops[4];
-      yield stops[5];
+      for (const stop of stops) {
+        yield stop;
+      }
+      // yield stops[0];
+      // yield stops[1];
+      // yield stops[2];
+      // yield stops[3];
+      // yield stops[4];
+      // yield stops[5];
     }
 
     const stopCaller = getNextStop();
@@ -32,12 +35,13 @@
       .addEventListener('click', () => {
         const item = stopCaller.next();
 
+        const stopElement = document.createElement('p');
+        stopElement.innerHTML = item.done ? "We made it!" : item.value;
+        document.body.appendChild(stopElement);
+
         if (item.done) {
           document.querySelector('#next-stop').disabled = true;
-        } else {
-          const stopElement = document.createElement('p');
-          stopElement.innerHTML = item.value;
-          document.body.appendChild(stopElement);
+          console.log("We made it!");
         }
       });
 
