@@ -16,7 +16,44 @@
 
   <script>
     // Write your code here
-    
+    // example api response
+    /*
+    "{\"results\":[{\"gender\":\"female\",\"name\":{\"title\":\"Miss\",\"first\":\"Ivy\",\"last\":\"Evans\"},\"location\":{\"street\":{\"number\":7595,\"name\":\"Dyers Road\"},\"city\":\"Greymouth\",\"state\":\"Nelson\",\"country\":\"New Zealand\",\"postcode\":24910,\"coordinates\":{\"latitude\":\"50.4188\",\"longitude\":\"72.8103\"},\"timezone\":{\"offset\":\"+9:00\",\"description\":\"Tokyo, Seoul, Osaka, Sapporo, Yakutsk\"}},\"email\":\"ivy.evans@example.com\",\"login\":{\"uuid\":\"730dc337-2e57-440e-b543-18874791dea4\",\"username\":\"brownbird559\",\"password\":\"cooking\",\"salt\":\"6tBtc6Cu\",\"md5\":\"e6578dff4b6ac79a99986f6a24b8b858\",\"sha1\":\"e07b469d28bf486194a33877e1c850271249f8ab\",\"sha256\":\"0dac32e68051577b8117248bbca725b517f1f6ec73ada1ab4d2c607f39709b0d\"},\"dob\":{\"date\":\"1976-03-28T13:36:43.203Z\",\"age\":48},\"registered\":{\"date\":\"2011-09-18T09:15:33.696Z\",\"age\":12},\"phone\":\"(461)-896-2787\",\"cell\":\"(059)-683-8190\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/26.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/26.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/26.jpg\"},\"nat\":\"NZ\"},{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Zhivosil\",\"last\":\"Burbak\"},\"location\":{\"street\":{\"number\":6303,\"name\":\"Provulok Vice-admirala Zhukova\"},\"city\":\"Ichnya\",\"state\":\"Sumska\",\"country\":\"Ukraine\",\"postcode\":44265,\"coordinates\":{\"latitude\":\"42.4867\",\"longitude\":\"108.8291\"},\"timezone\":{\"offset\":\"+10:00\",\"description\":\"Eastern Australia, Guam, Vladivostok\"}},\"email\":\"zhivosil.burbak@example.com\",\"login\":{\"uuid\":\"b08fae5d-1f1e-4561-ba56-b6559ec9035b\",\"username\":\"silverlion997\",\"password\":\"emily\",\"salt\":\"tvM5VIdo\",\"md5\":\"87e442d23ddcc4f8dfc65162a90c4b70\",\"sha1\":\"1786ffe516d9e2a0f7341194097b633c3d8c2201\",\"sha256\":\"7938307b7000859c053c7ff3c00c0faed8ac10ec1fa42ad0c362bfc3239a2e9b\"},\"dob\":{\"date\":\"1967-08-18T06:39:30.070Z\",\"age\":57},\"registered\":{\"date\":\"2007-08-13T01:00:26.741Z\",\"age\":17},\"phone\":\"(067) H56-1654\",\"cell\":\"(098) Y75-4600\",\"id\":{\"name\":\"\",\"value\":null},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/37.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/37.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/37.jpg\"},\"nat\":\"UA\"},{\"gender\":\"female\",\"name\":{\"title\":\"Ms\",\"first\":\"Melissa\",\"last\":\"Gordon\"},\"location\":{\"street\":{\"number\":8741,\"name\":\"Lone Wolf Trail\"},\"city\":\"Gladstone\",\"state\":\"New South Wales\",\"country\":\"Australia\",\"postcode\":5473,\"coordinates\":{\"latitude\":\"9.4515\",\"longitude\":\"178.9340\"},\"timezone\":{\"offset\":\"+6:00\",\"description\":\"Almaty, Dhaka, Colombo\"}},\"email\":\"melissa.gordon@example.com\",\"login\":{\"uuid\":\"646349a1-997c-4eb8-aa01-0cb5ecd76393\",\"username\":\"bigladybug871\",\"password\":\"lakers1\",\"salt\":\"pMLFkPCj\",\"md5\":\"440302b444138e9e34c55ae6cb24d60e\",\"sha1\":\"761076b991519b828f95bbe7f4162d637b4f2cea\",\"sha256\":\"83f9d5d23a5e33b8510fa86721256c36665d7a85a33ae3fa1f72c9048e7f5ad2\"},\"dob\":{\"date\":\"1951-02-23T16:56:02.979Z\",\"age\":73},\"registered\":{\"date\":\"2012-02-04T13:06:36.891Z\",\"age\":12},\"phone\":\"00-5618-3351\",\"cell\":\"0464-749-596\",\"id\":{\"name\":\"TFN\",\"value\":\"377986452\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/18.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/18.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/18.jpg\"},\"nat\":\"AU\"},{\"gender\":\"male\",\"name\":{\"title\":\"Mr\",\"first\":\"Dhanush\",\"last\":\"Bal\"},\"location\":{\"street\":{\"number\":8205,\"name\":\"Mall Rd\"},\"city\":\"Srikakulam\",\"state\":\"Delhi\",\"country\":\"India\",\"postcode\":95763,\"coordinates\":{\"latitude\":\"21.7765\",\"longitude\":\"39.9578\"},\"timezone\":{\"offset\":\"-4:00\",\"description\":\"Atlantic Time (Canada), Caracas, La Paz\"}},\"email\":\"dhanush.bal@example.com\",\"login\":{\"uuid\":\"82a72817-d173-4199-ad65-8197b7f9ea4c\",\"username\":\"happyrabbit404\",\"password\":\"ou812\",\"salt\":\"5SmpsmVR\",\"md5\":\"3556ed06e1971c2ff84047b2978c076a\",\"sha1\":\"f7259c9843386ece7908383e4a5637f87ee53d5d\",\"sha256\":\"a4c9ea626d4c164776e7a12cd0d533da87f2cb639abb16dadf7b6ed835a444f2\"},\"dob\":{\"date\":\"1950-04-04T14:48:04.864Z\",\"age\":74},\"registered\":{\"date\":\"2013-02-03T19:59:15.971Z\",\"age\":11},\"phone\":\"7367191785\",\"cell\":\"9488739689\",\"id\":{\"name\":\"UIDAI\",\"value\":\"642432215190\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/men/73.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/men/73.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/men/73.jpg\"},\"nat\":\"IN\"},{\"gender\":\"female\",\"name\":{\"title\":\"Mrs\",\"first\":\"Olivia\",\"last\":\"Margaret\"},\"location\":{\"street\":{\"number\":8880,\"name\":\"Richmond Ave\"},\"city\":\"Lumsden\",\"state\":\"Newfoundland and Labrador\",\"country\":\"Canada\",\"postcode\":\"T6G 3K4\",\"coordinates\":{\"latitude\":\"51.2493\",\"longitude\":\"149.0297\"},\"timezone\":{\"offset\":\"+5:45\",\"description\":\"Kathmandu\"}},\"email\":\"olivia.margaret@example.com\",\"login\":{\"uuid\":\"d9684883-414d-47e4-beb3-443cba6c518b\",\"username\":\"heavyzebra721\",\"password\":\"gggggggg\",\"salt\":\"sxFwAgdx\",\"md5\":\"52056358a44a33785791b47252403b3c\",\"sha1\":\"072c894ac73a96159c6071a5f9f2c00776db1723\",\"sha256\":\"953f71cd294e620d1e0891177f585d5eb8e711811a00749ac60e8fb6592334b6\"},\"dob\":{\"date\":\"1970-04-03T08:51:58.379Z\",\"age\":54},\"registered\":{\"date\":\"2002-12-07T09:08:52.047Z\",\"age\":21},\"phone\":\"Z94 X37-5951\",\"cell\":\"F07 G32-5703\",\"id\":{\"name\":\"SIN\",\"value\":\"286679659\"},\"picture\":{\"large\":\"https://randomuser.me/api/portraits/women/84.jpg\",\"medium\":\"https://randomuser.me/api/portraits/med/women/84.jpg\",\"thumbnail\":\"https://randomuser.me/api/portraits/thumb/women/84.jpg\"},\"nat\":\"CA\"}],\"info\":{\"seed\":\"a60de21ace1b9247\",\"results\":5,\"page\":1,\"version\":\"1.4\"}}"
+    */
+    async function fetchFriends(pageSize) {
+      const url = `https://randomuser.me/api/?results=${pageSize}`;
+      let response = await fetch(url);
+      friends = await response.json();
+      // let responseText = await response.text();
+
+      // const friends = JSON.parse(responseText);
+      let results = new Map();
+
+      friends.results
+        .map(friend => [`${friend.name.first} ${friend.name.last}`, friend.picture.medium])
+        .forEach((friend) => results.set(friend[0], friend[1]));
+
+      return results;
+    }
+    async function listFriends() {
+      const friends = await fetchFriends(5);
+      const placeHolder = document.querySelector('#timeline');
+
+      let idx = 1;
+      friends.forEach((value, key) => {
+        const div = document.createElement('div');
+        const img = document.createElement('img');
+        img.src = value;
+        const txt = document.createElement('p');
+        txt.textContent = `${idx}. ${key}`;
+
+        div.append(img, txt);
+        document.body.appendChild(div);
+        idx++;
+      });
+    }
+    listFriends();
+
   </script>
 </body>
 
